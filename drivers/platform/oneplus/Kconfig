@@ -1,0 +1,10 @@
+menu "OnePlus specific device drivers"
+	depends on ARCH_QCOM
+
+config BOARD_ONEPLUS5
+	bool "OnePlus5 device support"
+	depends on ARCH_MSM8998
+	help
+	 Say 'y' here to include OnePlus5 only modifications.
+
+endmenu
