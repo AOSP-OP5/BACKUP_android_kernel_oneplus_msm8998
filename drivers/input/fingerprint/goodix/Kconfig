@@ -1,0 +1,11 @@
+#
+# Goodix fingerprint sensor driver configuration
+#
+
+config INPUT_FINGERPRINT_GOODIX
+	tristate "Goodix Fingerprint Driver"
+	depends on SPI_MASTER
+	help
+	  Say Y here if you have a Goodix Fingerprint.
+
+	  If unsure, say N.

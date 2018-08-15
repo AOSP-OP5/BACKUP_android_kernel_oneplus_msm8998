@@ -1,0 +1,11 @@
+#
+# Fingerprint Detect driver configuration
+#
+
+config INPUT_FINGERPRINT_DETECT
+	tristate "Fingerprint Detect Driver"
+	depends on SPI_MASTER
+	help
+	  Say Y here if you have a dependency on Fingerprint Detect.
+
+	  If unsure, say N.
