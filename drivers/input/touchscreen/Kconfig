@@ -1225,4 +1225,12 @@ config TOUCHSCREEN_ST
 
 source "drivers/input/touchscreen/st/Kconfig"
 
+config TOUCHSCREEN_SYNAPTICS_S3320_I2C
+	tristate "Synaptics S3320 I2C Touchscreen Driver"
+	depends on I2C
+	help
+	  Say Y here if you have a Synaptics S3320 I2C Touchscreen.
+
+	  If unsure, say N.
+
 endif
