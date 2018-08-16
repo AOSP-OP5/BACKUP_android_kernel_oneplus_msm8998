@@ -1,0 +1,6 @@
+config SND_SOC_TFA9891
+	tristate "NXP TFA9891 Amplifier Driver"
+	help
+	  Say Y here if you have a NXP TFA9891 Amplifier.
+
+	  If unsure, say N.
