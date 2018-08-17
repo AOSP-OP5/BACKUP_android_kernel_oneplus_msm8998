@@ -82,4 +82,27 @@ config QPNP_QNOVO
 	  module. It also allows userspace code to read diagnostics of voltage
 	  and current measured during certain phases of the pulses.
 
+config FG_BQ27541
+	tristate "TI BQ27541 Battery Fuel Gauge Driver"
+	depends on I2C
+	help
+	  Say Y here if you have a TI BQ27541 Battery Fuel Gauge. This adds
+	  support for battery fuel gauging and state of charge of battery
+	  connected to the fuel gauge. The state of charge is reported through
+	  a BMS power supply property and also sends uevents when the capacity
+	  is updated.
+
+	  If unsure, say N.
+
+config ONEPLUS_FASTCHG
+	tristate "OnePlus Fast Charge Driver"
+	depends on I2C
+	help
+	  Say Y here if you have a OnePlus Fast Charge enabled device. This adds
+	  support for VOOC charge and state of charge of battery connected to
+	  the battery. The state of charge is reported through a battery power
+	  supply property.
+
+	  If unsure, say N.
+
 endmenu
